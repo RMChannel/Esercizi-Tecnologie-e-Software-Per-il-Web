@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Esercizio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Esercizio modulo</h1>
+<form action="esercizio_war_exploded">
+    <fieldset>
+        <legend>Dati personali</legend>
+        <p>Nome: <input type="text" id="nome" name="nome" required></p>
+        <p>Cognome: <input type="text" id="cognome" name="cognome" required></p>
+        <p>Data di nascita: <input type="date" id="data" name="data"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Indirizzo</legend>
+        <ul>
+            <li>Citta': <input type="text" id="citta" name="citta"></li>
+            <li>Provincia: <input type="text" id="provincia" name="provincia"></li>
+            <li>Codice postale: <input type="number" id="codicePostale" name="codicePostale"></li>
+            <li>Strada: <input type="text" id="strada" name="strada"></li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Dettagli personali</legend>
+        <p>Sesso:<input type="radio" value="Maschio" name="sesso">Maschio<input type="radio" value="Femmina" name="sesso">Femmina</p>
+        <p>Numero carta d'identita' (AA12345AA): <input type="text" id="cartaIdentita" name="cartaIdentita" pattern="[A-Z]{2}[0-9]{5}[A-Z]{2}"></p>
+        <p>Indirizzo di posta elettronica: <input type="email" id="postaElettronica" name="postaElettronica" required></p>
+        <p>Numero di telefono: <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}[/]{1}[0-9]{6,7}"></p>
+        <p>Numero preferito: <input type="number" id="numeroPreferito" name="numeroPreferito"></p>
+        <p>Colore preferito: <input type="text" id="colore" name="colore"></p>
+        <p>Grado di istruzione: <select id="istruzione" name="istruzione">
+            <option>Elementare</option>
+            <option>Media</option>
+            <option>Diploma</option>
+            <option>Laureato</option>
+        </select></p>
+    </fieldset>
+    <fieldset>
+        <legend>Dispositivi</legend>
+        <p>Quali dispositivi possiedi?<br>
+            <input type="checkbox" id="pcCheck" name="pcCheck"><label for="pcCheck" id="pcDesktop">PC Desktop</label><br>
+            <input type="checkbox" id="notebookCheck" name="notebookCheck"><label for="notebookCheck" id="notebook">Notebook</label><br>
+            <input type="checkbox" id="tabletCheck" name="tabletCheck"><label for="tabletCheck" id="tablet">Tablet</label><br>
+            <input type="checkbox" id="smartphoneCheck" name="smartphoneCheck"><label for="smartphoneCheck" id="smartphone">Smartphone</label><br>
+            <input type="checkbox" id="smartwatchCheck" name="smartwatchCheck"><label for="smartwatchCheck" id="smartwatch">Smartwatch</label><br>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Note aggiuntive</legend>
+        <label for="note"></label><textarea id="note" name="note" rows="4" cols="50"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Credenziali</legend>
+        <p>Password: <input type="password" id="password" name="password"></p>
+    </fieldset>
+    <button type="submit">Submit</button> <button type="reset">Reset</button>
+</form>
+</body>
+</html>
