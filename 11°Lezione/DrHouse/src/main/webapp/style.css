@@ -1,0 +1,54 @@
+html {
+    background-color:  #e6e7f0;
+    background-image: url("DrHouse.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: white;
+    border-color: #cccccc;
+    border-width: 1px;
+    margin: 30px 310px 30px 30px;
+}
+
+h1 {
+    color: #990000;
+    font-family: serif;
+    padding: 10px;
+    border-left: 2px #990000;
+    background-image: url("piu.jpg");
+}
+
+ h2 {
+     color: #990000;
+     font-family: serif;
+     border-left: 1px #990000;
+     margin: 0;
+ }
+
+p {
+    font-family: sans-serif;
+    font-size: 12pt;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+blockquote {
+    width: 300px;
+    font-family: serif;
+    font-style: italic;
+    background-image: url("cita.jpg");
+    line-height: 25px;
+}
+
+ul {
+    font-family: sans-serif;
+    text-align: justify;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+}
