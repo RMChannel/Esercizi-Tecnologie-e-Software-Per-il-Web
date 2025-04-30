@@ -1,0 +1,25 @@
+body {
+	font-size: 20px;
+}
+h1 {
+	font-size: 30px;
+}
+h2 {}
+
+img {
+	display: block;
+	width: 100%; /* forza l'immagine ad adattarsi al contenitore */
+	height: auto; /* mantiene le proporzioni */
+}
+
+.galleria {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	padding: 10px;
+}
+
+/* OGNI FIGURE */
+figure {
+	margin: 0;
+}
